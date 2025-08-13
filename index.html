@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bobi.ae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Фон с движещ се градиент */
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(-45deg, #1a0000, #5a0000, #870101, #1a0000);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Профилна снимка с авто-трептене */
+    .container img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(179, 0, 0, 0.8);
+      border: 3px solid #ff1e1e;
+      margin-bottom: 20px;
+      animation: pulse 4s infinite ease-in-out;
+    }
+
+     /* Shake ефект */
+      .container img:hover {
+        animation: shake 0.4s ease-in-out;
+        box-shadow: 0 0 35px rgba(179, 0, 0, 0.9);
+        opacity: 0.9;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        20% {
+          transform: translate(-2px, 0) rotate(-2deg);
+        }
+        40% {
+          transform: translate(2px, 0) rotate(2deg);
+        }
+        60% {
+          transform: translate(-2px, 0) rotate(-2deg);
+        }
+        80% {
+          transform: translate(2px, 0) rotate(2deg);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+      }
+
+
+
+    /* Заглавие с неон ефект */
+    .bobi_ae {
+      font-size: 65px;
+      margin: 0;
+      color: #ffffff;
+      text-shadow:
+        0 0 5px #ff1e1e,
+        0 0 10px #ff0000,
+        0 0 20px #b30000,
+        0 0 40px #870101;
+      animation: neonPulse 2s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+      from { text-shadow: 0 0 5px #ff1e1e, 0 0 10px #ff0000, 0 0 20px #b30000, 0 0 40px #870101; }
+      to { text-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff0000, 0 0 40px #b30000, 0 0 80px #870101; }
+    }
+
+    .paragph {
+      margin-top: 10px;
+      color: #ddd;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    /* Бутон с 3D и гланц ефект */
+    .buttons button {
+      position: relative;
+      padding: 14px 28px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #5a0000, #870101);
+      color: white;
+      border: none;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    /* Светлинна линия при hover */
+    .buttons button::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75px;
+      width: 50px;
+      height: 100%;
+      background: rgba(255,255,255,0.4);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .buttons button:hover::after {
+      left: 120%;
+    }
+
+    .buttons button:hover {
+      background: linear-gradient(145deg, #870101, #b30000);
+      transform: translateY(-3px) scale(1.07);
+      box-shadow: 0 8px 20px rgba(179, 0, 0, 0.8);
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img
+      src="https://ugc.production.linktr.ee/dc363a13-fde2-4d27-9a4e-85c0e4147e06_1000017304.jpeg?io=true&size=avatar-v3_0"
+      alt="Bobi.ae Logo"
+    />
+    <h1 class="bobi_ae">Bobi.ae</h1>
+    <p class="paragph">
+      Dropped all the links that I'm connected there. Thank you 🫶
+    </p>
+    <div class="buttons">
+      <button onclick="window.open('https://www.funyball.com/?rfsn=8714971.ecc0ed', '_blank')">
+        Football Jerseys with your name on the back
+      </button>
+      <button onclick="window.open('https://218jx0-yu.myshopify.com?sca_ref=8849844.r5bcvcabz3ee', '_blank')">
+        Pads for Football
+      </button>
+      <button onclick="window.open('https://forms.clickup.com/9003097555/f/8ca0qek-9531/487T9RCS5WCWESBOGC?Referral=(Bobi.Ae)', '_blank')">
+        Make money from your edits (If you have over 10k)
+      </button>
+      <button onclick="window.open('https://tr.ee/I1-lVkSGxf', '_blank')">
+        Bobi.Ae presets and comps
+      </button>
+      <button onclick="window.open('https://www.tiktok.com/@bobi.ae?_t=8r0z1hlivpy&_r=1', '_blank')">
+        TikTok
+      </button>
+      <button onclick="window.open('https://www.youtube.com/@bobi.ae7?si=qnsgi2k0rYI0Q2gH', '_blank')">
+        YouTube
+      </button>
+    </div>
+  </div>
+</body>
+</html>
